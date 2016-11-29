@@ -1,0 +1,13 @@
+---
+  # Este arquivo contém as tarefas a serem executadas para instalação do Nginx
+
+  - name: Instalando Nginx
+    yum: name=nginx state=present
+    notify: start nginx
+
+  - name: Copiando arquivos de configurações do nginx.conf
+    template: src=nginx.conf dest=/etc/nginx/
+
+  - name: Copiando arquivo de configuração da aplicação
+    template: src=app.conf dest=/etc/nginx/conf.d/
+    notify: restart nginx 
