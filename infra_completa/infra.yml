@@ -7,7 +7,7 @@
     remote_user: root
 
     roles:
-      - balan
+      - server_balan
 
 
   - name: Instalação do Servidor de Aplicação
@@ -15,7 +15,7 @@
     remote_user: root
 
     roles:
-      - app
+      - server_app
 
 
   - name: Instalação do Servidor de Banco de Dados
@@ -23,4 +23,4 @@
     remote_user: root
 
     roles:
-      - db
+      - server_db
