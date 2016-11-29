@@ -1,0 +1,13 @@
+---
+  # Arquivo de instalação do Httpd, PHP e Git
+
+  - name: Instalando pacotes Httpd, PHP e Git
+    yum: name={{ item }} state=present
+    with_items:
+      - httpd
+      - php
+      - php-mysql
+      - php-cli
+      - php-common
+      - git
+    notify: start httpd

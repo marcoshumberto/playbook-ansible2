@@ -1,0 +1,8 @@
+---
+  # Arquivos para manipulação do serviço do apache
+
+  - name: start httpd
+    service: name=httpd state=started enabled=yes
+
+  - name: restart httpd
+    service: name=httpd state=restarted
