@@ -1,0 +1,5 @@
+---
+# Variavéis usadas por todos os Grupos
+
+httpd_port: 80
+repository: https://github.com/Silva01/playbook-ansible.git 

@@ -1,0 +1,8 @@
+---
+
+# Variavéis para configurações no banco de dados
+
+mariadb_service: mariadb
+mariadb_port: 3306
+dbuser: aplicacao
+dbpassord: 12345 
