@@ -1,8 +1,5 @@
 ---
   # Arquivo para ativar serviço de banco de dados
 
-  - name: start mariadb
-    service: name=mariadb state=started enabled=yes
-
   - name: restart mariadb
     service: name=mariadb state=restarted

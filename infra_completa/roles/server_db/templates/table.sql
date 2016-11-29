@@ -1,7 +1,7 @@
-CREATE DATABASE aula_dirceu;
+CREATE DATABASE IF NOT EXISTS aula_dirceu;
 USE aula_dirceu;
 
-CREATE TABLE users(
+CREATE TABLE IF NOT EXISTS users(
     id INT UNSIGNED NOT NULL AUTO_INCREMENT, -- id
     name VARCHAR(60) NOT NULL, -- nome
     email VARCHAR(80) NOT NULL, -- email
