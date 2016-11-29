@@ -1,0 +1,24 @@
+---
+  # Arquivo para Instalação do MariaDb e Configurações
+
+  - name: Instalando MariaDB
+    yum: name:{{ item }} state=installed
+    with_items:
+      - mariadb-server
+      - mariadb
+      - python
+      - MySQL-python
+      - libselinux-python
+      - libsemanage-python
+
+    - name: Startando o MariaDB
+      notify: start mariadb
+
+    - name: Criando Usuário de Banco de Dados
+      mysql_user: name={{ dbuser }} passoword={{ dbpassord }} priv=*.*:ALL host='%' state=present
+
+    - name: Copiando arquivo de Banco de dados
+      template: src=table.sql dest=/root/
+
+    - name: Executar Script de Banco
+      mysql_db: state=import name=all target=/root/table.sql
