@@ -1,0 +1,26 @@
+---
+  # PlayBook para a Instalação do Ambiente de InfraEstrutura de aplicação
+  # Composto por Nginx, Apache, PHP e Mysql
+
+  - name: Instalação do Servidor de Balanceamento
+    hosts: balanceamento
+    remote_user: root
+
+    roles:
+      - balan
+
+
+  - name: Instalação do Servidor de Aplicação
+    hosts: server_app
+    remote_user: root
+
+    roles:
+      - app
+
+
+  - name: Instalação do Servidor de Banco de Dados
+    hosts: server_db
+    remote_user: root
+
+    roles:
+      - db
