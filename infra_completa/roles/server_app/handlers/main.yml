@@ -1,0 +1,8 @@
+---
+  # Arquivo responsável por realizar acionar serviços do Nginx
+
+  - name: restart nginx
+    service: name=nginx state=restarted enable=yes
+
+  - name: start nginx
+    service: name=nginx state=started
