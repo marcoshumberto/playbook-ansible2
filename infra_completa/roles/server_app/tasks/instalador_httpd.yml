@@ -10,4 +10,6 @@
       - php-cli
       - php-common
       - git
-    notify: start httpd
+
+  - name: start httpd
+    service: name=httpd state=started enabled=yes

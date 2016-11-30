@@ -1,0 +1,4 @@
+---
+# Variaveis para os host de Banco de Dados
+db_new_user=aplicacao
+db_new_pass=12345

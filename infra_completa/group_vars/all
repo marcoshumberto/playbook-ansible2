@@ -1,5 +1,4 @@
 ---
 # Variavéis usadas por todos os Grupos
 
-httpd_port: 80
 repository: https://gitlab.com/Rafael.rgsousa/aula_automacao.git
