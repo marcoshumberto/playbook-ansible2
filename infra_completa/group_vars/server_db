@@ -1,4 +1,0 @@
----
-# Variaveis usadas para configuração do servidor de Banco de Dados
-dbuser=aplicacao
-dbpass=12345
