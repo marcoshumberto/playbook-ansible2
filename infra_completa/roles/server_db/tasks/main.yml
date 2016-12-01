@@ -15,7 +15,7 @@
     service: name=mariadb state=started enabled=yes
 
   - name: Criando Usuário de Banco de Dados
-    mysql_user: name={{ db_new_user }} password={{ db_new_pass }} host='%' priv=*.*:ALL,GRANT state=present
+    mysql_user: name=aplicacao password=12345 host='%' priv=*.*:ALL,GRANT state=present
 
   - name: Copiando arquivo de Banco de dados
     template: src=table.sql dest=/root/
