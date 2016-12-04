@@ -2,4 +2,4 @@
   # Arquivo responsável por baixar uma aplicação direto do Git
 
   - name: Baixando aplicação do repositório do gitlab
-    git: repo={{ repository }} dest=/var/www/html/
+    git: repo={{ repository }} dest=/var/www/html/ clone=no

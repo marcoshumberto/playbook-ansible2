@@ -2,3 +2,5 @@
 # Variavéis usadas por todos os Grupos
 
 repository: https://gitlab.com/Rafael.rgsousa/aula_automacao.git
+db_user: aplicacao
+db_senha: 12345
