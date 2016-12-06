@@ -11,7 +11,7 @@
 
 
   - name: Instalação do Servidor de Aplicação
-    hosts: server_app
+    hosts: aplicacoes
     remote_user: root
 
     roles:
@@ -19,7 +19,7 @@
 
 
   - name: Instalação do Servidor de Banco de Dados
-    hosts: server_db
+    hosts: banco
     remote_user: root
 
     roles:
